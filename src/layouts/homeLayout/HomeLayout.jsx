@@ -1,8 +1,9 @@
+import Banner from "../../compolents/banner/Banner";
 
 const HomeLayout = () => {
     return (
-        <section className="">
-            <p className="">Home</p>
+        <section className="w-full">
+            <Banner></Banner>
         </section>
         
     );
