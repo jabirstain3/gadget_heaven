@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
 
             {/* mobile sidebar */}
-            <aside className={` ${isMenuOpen ? "translate-x-0 opacity-100 z-20" : "translate-x-[200px] opacity-0 z-[-1]"} md:hidden bgprimary p-4  absolute top-[45px] right-0 w-[200px] rounded-md transition-all duration-300`}>
+            <aside className={` ${isMenuOpen ? "translate-x-0 opacity-100 z-20" : "hidden translate-x-[200px] opacity-0 z-[-1]"} md:hidden bgprimary p-4  absolute top-[45px] right-0 w-[200px] rounded-md transition-all duration-300`}>
 
                 <div className="w-full relative mb-5">
                     <input className={`py-1.5 pr-4 w-full border border-text pl-10 rounded-full outline-none bg-white`} placeholder="Search..."/>
