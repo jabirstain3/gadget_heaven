@@ -3,6 +3,7 @@ import App from "../App.jsx";
 import HomeLayout from "../layouts/homeLayout/HomeLayout.jsx";
 import DashboardLayout from "../layouts/dashboardLayout/DashboardLayout.jsx";
 import StatisticsLayout from "../layouts/statisticsLayout/StatisticsLayout.jsx";
+import ProductDetailsLayout from "../layouts/productDetailsLayout/ProductDetailsLayout.jsx";
 
 const router = createBrowserRouter([
     {
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
             {
                 path: "statistics",
                 element: <StatisticsLayout/>,
-            },            
+            },
+            {
+                path: "products/:id",
+                element: <ProductDetailsLayout/>,
+            }            
         ],
     },
 ])

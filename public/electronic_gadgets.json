@@ -1,0 +1,242 @@
+[
+    {
+        "product_id": "EG1001",
+        "product_title": "iPhone 14 Pro Max",
+        "product_image": "https://store.storeimages.cdn-apple.com/iphone14pro.png",
+        "category": "Smartphone",
+        "price": 1199,
+        "description": "Advanced iPhone with A16 Bionic chip and ProMotion display.",
+        "Specification": [
+            "6.7-inch Super Retina XDR",
+            "A16 Bionic",
+            "Triple 48MP camera",
+            "iOS 16"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "EG1002",
+        "product_title": "Samsung Galaxy S23 Ultra",
+        "product_image": "https://images.samsung.com/s23ultra.png",
+        "category": "Smartphone",
+        "price": 1099,
+        "description": "Flagship phone with 200MP camera and Snapdragon 8 Gen 2.",
+        "Specification": [
+            "6.8-inch QHD+",
+            "Snapdragon 8 Gen 2",
+            "200MP quad camera",
+            "Android 13"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "EG1003",
+        "product_title": "Google Pixel 8 Pro",
+        "product_image": "https://store.google.com/pixel8pro.png",
+        "category": "Smartphone",
+        "price": 999,
+        "description": "Google's flagship phone with Tensor G3 chip and advanced AI features.",
+        "Specification": [
+            "6.7-inch LTPO OLED",
+            "Tensor G3",
+            "50MP triple camera",
+            "Android 14"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "EG1004",
+        "product_title": "MacBook Pro 16-inch M2 Pro",
+        "product_image": "https://store.apple.com/macbookpro16.png",
+        "category": "Laptop",
+        "price": 2499,
+        "description": "MacBook with M2 Pro chip and Liquid Retina XDR display.",
+        "Specification": [
+            "16.2-inch display",
+            "M2 Pro",
+            "32GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": "EG1005",
+        "product_title": "Dell XPS 13 Plus",
+        "product_image": "https://dell.com/xps13plus.png",
+        "category": "Laptop",
+        "price": 1499,
+        "description": "Ultrabook with 13th Gen Intel Core processors.",
+        "Specification": [
+            "13.4-inch display",
+            "Intel i7-1360P",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "EG1006",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://hp.com/spectrex360.png",
+        "category": "Laptop",
+        "price": 1399,
+        "description": "Convertible laptop with touch screen and Intel Evo certification.",
+        "Specification": [
+            "13.5-inch OLED",
+            "Intel i7",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "EG1007",
+        "product_title": "iPad Pro 12.9-inch (M2)",
+        "product_image": "https://store.apple.com/ipadpro.png",
+        "category": "Tablet",
+        "price": 1299,
+        "description": "Tablet with M2 chip and Liquid Retina XDR display.",
+        "Specification": [
+            "12.9-inch display",
+            "M2 chip",
+            "128GB",
+            "iPadOS 16"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "EG1008",
+        "product_title": "Samsung Galaxy Tab S8 Ultra",
+        "product_image": "https://samsung.com/tabS8ultra.png",
+        "category": "Tablet",
+        "price": 999,
+        "description": "Large AMOLED tablet for professionals.",
+        "Specification": [
+            "14.6-inch AMOLED",
+            "Snapdragon 8 Gen 1",
+            "S Pen",
+            "Android 12"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "EG1009",
+        "product_title": "Microsoft Surface Pro 9",
+        "product_image": "https://microsoft.com/surfacepro9.png",
+        "category": "Tablet",
+        "price": 1099,
+        "description": "2-in-1 tablet and laptop with Windows 11.",
+        "Specification": [
+            "13-inch PixelSense",
+            "Intel i5",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "EG1010",
+        "product_title": "Apple Watch Series 9",
+        "product_image": "https://apple.com/watchseries9.png",
+        "category": "Smartwatch",
+        "price": 499,
+        "description": "Advanced health features and on-device Siri.",
+        "Specification": [
+            "45mm display",
+            "S9 chip",
+            "ECG",
+            "watchOS 10"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "EG1011",
+        "product_title": "Samsung Galaxy Watch 6",
+        "product_image": "https://samsung.com/galaxywatch6.png",
+        "category": "Smartwatch",
+        "price": 429,
+        "description": "Rotating bezel with Wear OS by Google.",
+        "Specification": [
+            "1.5-inch AMOLED",
+            "BioActive Sensor",
+            "Wear OS",
+            "Bluetooth & LTE"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "EG1012",
+        "product_title": "Fitbit Sense 2",
+        "product_image": "https://fitbit.com/sense2.png",
+        "category": "Smartwatch",
+        "price": 299,
+        "description": "Fitness smartwatch with stress management and sleep tracking.",
+        "Specification": [
+            "EDA scan",
+            "Heart-rate monitor",
+            "GPS",
+            "6-day battery"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "EG1013",
+        "product_title": "Sony WH-1000XM5",
+        "product_image": "https://sony.com/wh1000xm5.png",
+        "category": "Headphone",
+        "price": 399,
+        "description": "Noise canceling over-ear Headphone.",
+        "Specification": [
+            "30mm drivers",
+            "ANC",
+            "30-hour battery",
+            "Bluetooth 5.2"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": "EG1014",
+        "product_title": "Bose QC Earbuds II",
+        "product_image": "https://bose.com/qcearbuds2.png",
+        "category": "Headphone",
+        "price": 299,
+        "description": "Wireless earbuds with adaptive noise cancellation.",
+        "Specification": [
+            "CustomTune",
+            "IPX4",
+            "24-hour battery",
+            "Bluetooth 5.3"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "EG1015",
+        "product_title": "AirPods Pro (2nd Gen)",
+        "product_image": "https://apple.com/airpodspro2.png",
+        "category": "Headphone",
+        "price": 249,
+        "description": "Apple's best in-ear Headphone with H2 chip.",
+        "Specification": [
+            "Active Noise Canceling",
+            "H2 chip",
+            "MagSafe Charging",
+            "iOS integration"
+        ],
+        "availability": true,
+        "rating": 4.6
+    }
+]

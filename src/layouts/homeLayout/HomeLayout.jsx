@@ -1,9 +1,11 @@
 import Banner from "../../compolents/banner/Banner";
+import ProductDisplayLayout from "../productDisplayLayout/ProductDisplayLayout";
 
 const HomeLayout = () => {
     return (
         <section className="w-full">
-            <Banner></Banner>
+            <Banner/>
+            <ProductDisplayLayout/>
         </section>
         
     );
