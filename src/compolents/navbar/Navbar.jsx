@@ -1,10 +1,11 @@
 import {IoIosCart, IoIosHeart, IoIosSearch} from "react-icons/io";
-import {TbBrandGithubFilled} from "react-icons/tb";
 import {CiMenuFries} from "react-icons/ci";
 import { NavLink, useLocation } from "react-router";
 import { useState } from "react";
+import { FavoriteContext } from "../../utils/context/FavouriteContext";
 
 const Navbar = () => {
+    // const { favorites } = useContext(FavoriteContext);
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const location = useLocation()
 
@@ -20,7 +21,7 @@ const Navbar = () => {
         <nav className={`border border-[#dcd5d5] sectionBase w-full mx-auto rounded-xl flex items-center justify-between relative shadow-md ${isHomePage ? "bgprimary" : ""}`}>
 
             {/* logo */}
-            <a href="/" className={`text-xl font-bold ${isHomePage ? "text-white" : "text-black"}`}>Gadget Haven</a>
+            <NavLink to="/" className={`text-xl font-bold ${isHomePage ? "text-white" : "text-black"}`}>Gadget Haven</NavLink>
 
             {/* nav menus */}
             <ul className="items-center gap-[20px] text-[1rem] md:flex hidden">
@@ -43,8 +44,18 @@ const Navbar = () => {
                     <IoIosSearch className="absolute top-[9px] left-3 text-[#424242] text-[1.3rem]"/>
                 </div> 
 
-                <IoIosCart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
-                <IoIosHeart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
+                <div className="relative">
+                    <IoIosCart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
+                    {/* <div className=" absolute top-[-30%] right-[-10%] text-secondary min-w-[20px] min-h-[20px] text-center">
+                        <span className="text-[0.6rem] bg-[#dfdcde] text-black py-1 px-1 rounded-full w-full h-full">{favorites.length}</span>
+                    </div> */}
+                </div>
+                <div className="relative">
+                    <IoIosHeart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
+                    {/* <div className=" absolute top-[-30%] right-[-10%] text-secondary min-w-[20px] min-h-[20px] text-center">
+                        <span className="text-[0.6rem] bg-[#dfdcde] text-black py-1 px-1 rounded-full w-full h-full">{favorites.length}</span>
+                    </div> */}
+                </div>
                 <CiMenuFries className={`text-[1.5rem] cursor-pointer transition-all duration-500 md:hidden flex ${isHomePage ? "textthirdary" : "textprimary"}`} onClick={() => setIsMenuOpen(!isMenuOpen)}/>
             </div>
 

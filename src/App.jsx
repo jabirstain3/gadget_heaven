@@ -7,7 +7,7 @@ function App() {
   return (
     <section>            
       <Navbar/>
-      
+
       <Outlet/>
 
       <Footer/>

@@ -24,14 +24,14 @@ const ProductDisplayLayout = () => {
                 <CiMenuFries className={`text-[1.5rem] cursor-pointer transition-all duration-500 md:hidden flex`} onClick={() => setIsCatagoryOpen(!isCatagoryOpen)}/>
 
                 <div className=" hidden w-[200px] p-4 rounded-lg bg-[#dfdcde]/70 shadow-md md:flex flex-col gap-4 ">
-                    {catagoryObjects.map((ctg) => <button key={ctg.id} className={`w-full px-6 py-2 rounded-full  text-left ${catagory === ctg.id ? "bg-[#6b1eab] text-white font-bold" : "bg-white text-[#424242] font-semibold " }`} onClick={() => setCatagory(ctg.name)}>{ctg.name}</button>) }
+                    {catagoryObjects.map((ctg) => <button key={ctg.id} className={`w-full px-6 py-2 rounded-full  text-left ${catagory === ctg.name ? "bg-[#6b1eab] text-white font-bold" : "bg-white text-[#424242] font-semibold " }`} onClick={() => setCatagory(ctg.name)}>{ctg.name}</button>) }
                 </div>
 
                 <Products cat={catagory} />
 
                 <aside className={` ${isCatagoryOpen ? "z-20" : "hidden"} md:hidden p-4  absolute top-[10px] left-[-20px] w-[200px] rounded-md transition-all duration-300`}>
                     <div className="border w-[200px] p-4 rounded-lg bg-[#dfdcde]/70 shadow-md flex flex-col gap-4 ">
-                        {catagoryObjects.map((ctg) => <button key={ctg.id} className={`w-full px-6 py-2 rounded-full  text-left ${catagory === ctg.id ? "bg-[#6b1eab] text-white font-bold" : "bg-white text-[#424242] font-semibold " }`} onClick={() => setCatagory(ctg.name)}>{ctg.name}</button>) }
+                        {catagoryObjects.map((ctg) => <button key={ctg.id} className={`w-full px-6 py-2 rounded-full  text-left ${catagory === ctg.name ? "bg-[#6b1eab] text-white font-bold" : "bg-white text-[#424242] font-semibold " }`} onClick={() => setCatagory(ctg.name)}>{ctg.name}</button>) }
                     </div>
                 </aside>
             </div>

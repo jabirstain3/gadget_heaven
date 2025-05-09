@@ -13,7 +13,8 @@
             "iOS 16"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4.8,
+        "sold": 236
     },
     {
         "product_id": "EG1002",
@@ -29,7 +30,8 @@
             "Android 13"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "sold": 386
     },
     {
         "product_id": "EG1003",
@@ -45,7 +47,8 @@
             "Android 14"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "sold": 1423
     },
     {
         "product_id": "EG1004",
@@ -61,7 +64,8 @@
             "1TB SSD"
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4.9,
+        "sold": 800
     },
     {
         "product_id": "EG1005",
@@ -77,7 +81,8 @@
             "512GB SSD"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "sold": 345
     },
     {
         "product_id": "EG1006",
@@ -93,7 +98,8 @@
             "1TB SSD"
         ],
         "availability": true,
-        "rating": 4.5
+        "rating": 4.5,
+        "sold": 208
     },
     {
         "product_id": "EG1007",
@@ -109,7 +115,8 @@
             "iPadOS 16"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4.8,
+        "sold": 126
     },
     {
         "product_id": "EG1008",
@@ -125,7 +132,8 @@
             "Android 12"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "sold": 504
     },
     {
         "product_id": "EG1009",
@@ -141,7 +149,8 @@
             "256GB SSD"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "sold": 1305
     },
     {
         "product_id": "EG1010",
@@ -157,7 +166,8 @@
             "watchOS 10"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "sold": 86
     },
     {
         "product_id": "EG1011",
@@ -173,7 +183,8 @@
             "Bluetooth & LTE"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "sold": 153
     },
     {
         "product_id": "EG1012",
@@ -189,7 +200,8 @@
             "6-day battery"
         ],
         "availability": true,
-        "rating": 4.5
+        "rating": 4.6,
+        "sold": 38
     },
     {
         "product_id": "EG1013",
@@ -205,7 +217,8 @@
             "Bluetooth 5.2"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4.8,
+        "sold": 196
     },
     {
         "product_id": "EG1014",
@@ -221,7 +234,8 @@
             "Bluetooth 5.3"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4.7,
+        "sold": 467
     },
     {
         "product_id": "EG1015",
@@ -237,6 +251,7 @@
             "iOS integration"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 4.6,
+        "sold": 427
     }
 ]

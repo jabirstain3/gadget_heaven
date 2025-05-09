@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="w-full max-w-[800px] mx-auto px-4 py-10 text-black">
             {/* logo & details */}
             <div className="text-center p-4">
-                <a href="" className="text-3xl font-bold ">Gadget Haven</a>
+                <Link to='/' className="text-3xl font-bold ">Gadget Haven</Link>
 
                 <p className="my-4 font-medium textforthary ">Your one-stop shop for all your gadget needs.</p>
             </div>

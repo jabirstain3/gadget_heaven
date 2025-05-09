@@ -3,7 +3,7 @@ import ProductCard from "../productCard/ProductCard";
 
 const Products = ( {cat} ) => {
     const [items, setItems] = useState([]);
-    console.log(cat);
+    // console.log(cat);
     
     useEffect(() => {
         fetch('electronic_gadgets.json')
