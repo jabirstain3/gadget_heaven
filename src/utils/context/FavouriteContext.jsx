@@ -11,10 +11,10 @@ export const FavoriteProvider = ({ children }) => {
         const id = item.product_id;
         // console.log(id);
         
-        if (!favorites.some(favItem => favItem.product_id === id)) {
-            setFavorites([...favorites, item]);
-        } else {
+        if (favorites.some(favItem => favItem.product_id === id)) {
             setFavorites(favorites.filter(item => item.product_id !== id));
+        } else {
+            setFavorites([...favorites, item]);
         };
     };
 

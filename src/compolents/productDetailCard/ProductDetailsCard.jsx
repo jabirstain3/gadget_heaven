@@ -4,17 +4,30 @@ import { IoHeart, IoHeartOutline, IoStar } from 'react-icons/io5';
 import { useLocation } from 'react-router';
 import { FavoriteContext } from '../../utils/context/FavouriteContext';
 import { CartContext } from '../../utils/context/CartContext';
+import { useToast } from '../../hooks/useToast';
 
 const ProductDetailsCard = () => {
     const { favorites, handalFavorite } = useContext(FavoriteContext);
     const { handalCartItem } = useContext(CartContext);
     const location = useLocation();
+    const toast = useToast();
 
     const { state } = location;
     // console.log(state);
     const { product_title, price, product_image, description, Specification, availability, rating, sold } = state || {};
 
     const [isFavorite, setIsFavorite] = useState(favorites.some(item => item.product_id === state.product_id));
+
+    const handleFavorite = () => {
+        setIsFavorite(!isFavorite); 
+        handalFavorite(state);
+        if (isFavorite) {
+            toast("warn" , "Removed from fWishlist");
+        }
+        else {
+            toast("success" , "Added to Wishlist");
+        }
+    }
 
     return (
         <div className="sectionBase mx-auto">
@@ -51,9 +64,9 @@ const ProductDetailsCard = () => {
                     </div>
 
                     <div className='flex items-center gap-4 mt-4'>
-                        <button className={`hover:text-[#7f21c7] font-semibold hover:bg-white px-6 py-2 border hover:border-[#6b1eab] rounded-full bg-[#932ce7] text-white border-white transition duration-300`} onClick={() => handalCartItem(state)}>Add To Card</button>
+                        <button className={`hover:text-[#7f21c7] font-semibold hover:bg-white px-6 py-2 border hover:border-[#6b1eab] rounded-full bg-[#932ce7] text-white border-white transition duration-300`} onClick={() => { handalCartItem(state); toast("success" , "Added to Cart") }}>Add To Card</button>
 
-                        <button className="bg-gray-200 hover:bg-white rounded-full w-max text-gray-600 p-2 border border-white hover:border-gray-400 transition duration-300" onClick={() => { setIsFavorite(!isFavorite); handalFavorite(state)}} >
+                        <button className="bg-gray-200 hover:bg-white rounded-full w-max text-gray-600 p-2 border border-white hover:border-gray-400 transition duration-300" onClick={handleFavorite}>
                             {
                                 isFavorite ? <IoHeart className="w-6 h-6 text-red-500"/> :
                                 <IoHeartOutline className="w-6 h-6"/> 

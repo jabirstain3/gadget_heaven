@@ -1,7 +1,7 @@
 import Banner from "../../compolents/banner/Banner";
 import ProductDisplayLayout from "../productDisplayLayout/ProductDisplayLayout";
 
-const HomeLayout = () => {
+const HomeLayout = () => { 
     return (
         <section className="w-full">
             <Banner/>

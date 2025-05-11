@@ -14,7 +14,7 @@ const Navbar = () => {
     const navlinks = [
         // {name: "Home", path: "/"},
         {name: "Statistics", path: "/statistics"},
-        {name: "dashboard", path: "/dashboard"},
+        {name: "dashboard", path: "/dashboard/cart"},
     ]
 
     return (
@@ -45,16 +45,20 @@ const Navbar = () => {
                 </div> 
 
                 <div className="relative">
-                    <IoIosCart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
-                    {/* <div className=" absolute top-[-30%] right-[-10%] text-secondary min-w-[20px] min-h-[20px] text-center">
-                        <span className="text-[0.6rem] bg-[#dfdcde] text-black py-1 px-1 rounded-full w-full h-full">{favorites.length}</span>
-                    </div> */}
+                    <NavLink to="/dashboard/cart">
+                        <IoIosCart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
+                        {/* <div className=" absolute top-[-30%] right-[-10%] text-secondary min-w-[20px] min-h-[20px] text-center">
+                            <span className="text-[0.6rem] bg-[#dfdcde] text-black py-1 px-1 rounded-full w-full h-full">{favorites.length}</span>
+                        </div> */}
+                    </NavLink>
                 </div>
                 <div className="relative">
-                    <IoIosHeart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
-                    {/* <div className=" absolute top-[-30%] right-[-10%] text-secondary min-w-[20px] min-h-[20px] text-center">
-                        <span className="text-[0.6rem] bg-[#dfdcde] text-black py-1 px-1 rounded-full w-full h-full">{favorites.length}</span>
-                    </div> */}
+                    <NavLink to="/dashboard/wishlist">
+                        <IoIosHeart className={`text-[1.8rem] cursor-pointer transition-all duration-500 ${isHomePage ? "textthirdary" : "textprimary"}`}/>
+                        {/* <div className=" absolute top-[-30%] right-[-10%] text-secondary min-w-[20px] min-h-[20px] text-center">
+                            <span className="text-[0.6rem] bg-[#dfdcde] text-black py-1 px-1 rounded-full w-full h-full">{favorites.length}</span>
+                        </div> */}
+                    </NavLink>
                 </div>
                 <CiMenuFries className={`text-[1.5rem] cursor-pointer transition-all duration-500 md:hidden flex ${isHomePage ? "textthirdary" : "textprimary"}`} onClick={() => setIsMenuOpen(!isMenuOpen)}/>
             </div>

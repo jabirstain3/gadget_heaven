@@ -16,8 +16,17 @@ export const CartProvider = ({ children }) => {
         });
     };
 
+    const handalRemoveCartItem = (id) => {
+        // console.log(id);
+        setCartItems((Items) => {return Items.filter((item) => item.product_id !== id)});
+    };
+
+    const handalClearCart = () => {
+        setCartItems([]);
+    };
+
     return (
-        <CartContext.Provider value={{ cartItems, handalCartItem }}>
+        <CartContext.Provider value={{ cartItems, handalCartItem, handalRemoveCartItem, handalClearCart }}>
             {children}
         </CartContext.Provider>
     );
