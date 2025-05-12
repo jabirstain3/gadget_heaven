@@ -7,6 +7,8 @@ import ProductDetailsLayout from "../layouts/productDetailsLayout/ProductDetails
 import CartLayout from "../layouts/cartLayout/CartLayout.jsx";
 import FavouriteLayout from "../layouts/favouriteLayout/FavouriteLayout.jsx";
 import ErrorPage from "../pages/errorPage/ErrorPage.jsx";
+import RegistrationPage from "../pages/registrationPage/RegistrationPage.jsx";
+import LogInPage from "../pages/logInPage/LogInPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -44,7 +46,15 @@ const router = createBrowserRouter([
     {
         path: "*",
         element: <ErrorPage/>,
-    }, 
+    },
+    {
+        path: "registration",
+        element: <RegistrationPage/>,
+    },                     
+    {
+        path: "login",
+        element: <LogInPage/>,
+    },                     
 ])
 
 export default router;

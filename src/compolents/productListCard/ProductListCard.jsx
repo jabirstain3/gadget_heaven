@@ -31,7 +31,7 @@ const ProductListCard = ({ item }) => {
     return (
         <div className="w-full h-full bg-white p-4 rounded-xl flex justify-between items-center gap-4 shadow-md">
             <div className="aspect-[4/3] w-32 rounded-lg">
-                <img src={product_image} alt={product_title} className=" rounded-lg " />
+                <img src={product_image} alt={product_title} className="w-full aspect-[4/3] rounded-lg " />
             </div>
 
             <div className=" w-full h-full md:flex justify-between items-start gap-4">

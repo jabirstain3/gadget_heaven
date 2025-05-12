@@ -15,6 +15,7 @@ const Navbar = () => {
         // {name: "Home", path: "/"},
         {name: "Statistics", path: "/statistics"},
         {name: "dashboard", path: "/dashboard/cart"},
+        {name: "Log In", path: "login"},
     ]
 
     return (

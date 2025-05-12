@@ -33,7 +33,7 @@ const ProductDetailsCard = () => {
         <div className="sectionBase mx-auto">
             <div className='w-[90%] lg:w-full max-w-xl lg:max-w-6xl mx-auto my-10 lg:my-14 p-4 lg:p-6 bg-white rounded-lg lg:flex gap-6 shadow-lg md:shadow-2xl'>
                 <div className="border w-full lg:w-1/2  aspect-[4/3] relative overflow-hidden rounded-lg">
-                    <img src={product_image} alt={product_title} className='w-full object-cover'/>
+                    <img src={product_image} alt={product_title} className='w-full aspect-[4/3] object-cover object-center'/>
                 </div>
 
                 <div className='mt-4 lg:mt-0 flex flex-col gap-2'>
